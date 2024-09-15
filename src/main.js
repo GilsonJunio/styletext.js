@@ -1,5 +1,4 @@
-var chars = {
-    "mathematicalBold": {
+{    "mathematicalBold": {
         "a": "𝐚",
         "b": "𝐛",
         "c": "𝐜",
@@ -26,40 +25,4 @@ var chars = {
         "x": "𝐱",
         "y": "𝐲",
         "z": "𝐳",
-    },
-    "doublestruck": {
-        "a": "𝕒",
-        "b": "𝕓",
-        "c": "𝕔",
-        "d": "𝕕",
-        "e": "𝕖",
-        "f": "𝕗",
-        "g": "𝕘",
-        "h": "𝕙",
-        "i": "𝕚",
-        "j": "𝕛",
-        "k": "𝕜",
-        "l": "𝕝",
-        "m": "𝕞",
-        "n": "𝕟",
-        "o": "𝕠",
-        "p": "𝕡",
-        "q": "𝕢",
-        "r": "𝕣",
-        "s": "𝕤",
-        "t": "𝕥",
-        "u": "𝕦",
-        "v": "𝕧",
-        "w": "𝕨",
-        "x": "𝕩",
-        "y": "𝕪",
-        "z": "𝕫",
     }
-}
-function convertText(text, style){
-    text = text.toLowerCase();
-    for(let x in chars[style]){
-        text = text.replaceAll(x, chars[style][x]);
-    }
-    return(text);
-}
